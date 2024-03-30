@@ -263,3 +263,268 @@ int main(){
     cout<<num;
 }
 */
+//Pass by reference - array
+#include<bits/stdc++.h>
+using namespace std;
+
+/*this is the basic for printing variable Initialization
+int main(){
+    int hg,x;
+    cin>>x>>hg;
+    cout<<"X= "<<x<<"\n";
+    cout<<"Hg= "<<hg;
+    return 0;
+}
+*/
+/*local variable
+int p(){
+    int m=77;
+    cout<<"the value of m is : "<<m;
+
+}
+int main(){
+    cout<<"Marks: ";
+    p();
+    return 0;
+}
+*/
+/*global variable
+int glob=77;
+int p(){
+    cout<<"the global value is:"<<glob<<endl;
+
+}
+int main(){
+    p();//the value is 32
+    glob=55;
+    p();//the glob value is updated to 55
+    return 0;
+}
+*/
+/*datatypes
+int main(){
+    int i=10;cout<<i<<endl;
+    short s=1;cout<<s<<endl;
+    long l=1000;cout<<l<<endl;
+    long long ll=10;cout<<ll<<endl;
+    float f=10.1;cout<<f<<endl;
+    double d=10.123;cout<<d<<endl;
+    long double ld=10.1538;cout<<ld<<endl;
+    
+}
+*/
+//Control statements - if else
+/*
+int main(){
+    int age;
+    cout<<"enter age"<<endl;
+    cin>>age;
+if(age>=18){
+    cout<<"DL ok";
+}
+else{
+    cout<<"DL not ok";
+}
+}
+//else-if statement
+int main(){
+    int age;
+    cout<<"enter age"<<endl;
+    cin>>age;
+if(age>118||age<1){
+    cout<<"DL invalid";
+}
+else if(age>=18){
+    cout<<"DL ok";
+}
+else{
+    cout<<"DL not ok";
+}
+}
+*/
+/*switch case
+int main(){
+int age;
+cout<<"enter age: ";
+cin>>age;
+switch (age)
+{
+case 18:cout<<"Eligible";
+       break;
+case 12:cout<<"not eligible";
+        break;
+case 50:cout<<"out of range";        
+default:cout<<"not available";
+    break;
+}
+}
+*/
+/*for loop
+int main(){
+    int i,n=10;
+    for(i=0;i<n;i++)
+    {
+        cout<<"i="<<i<<"\n";
+        
+    }
+    
+}
+*/
+/*while loop
+int main(){ 
+    int i=0;
+while(i<5)
+    { 
+        cout<<"S"<<i<<"\n";
+        i++;
+    }
+    }
+*/
+/*do while
+int main(){
+    int n;
+
+    do{
+        cout<<"enter n"<<endl;
+        cin>>n;
+    }while(n!=0);
+}
+*/
+//arrays 
+/* 1D array
+int main(){
+    int a[5],i;
+    for( i=0;i<5;i++){
+        cout<<"Enter element "<<"\t";
+        cin>>a[i];
+}
+for(i=0;i<5;i++){
+    cout<<a[i]<<"\t";
+}
+}
+*/
+//2D array
+/*
+int main(){
+    int i,j;
+    int a[3][3]= {{1,2,3},{4,5,6},{7,8,9}};
+    //displaying elements of the array using nested loops
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            cout<<"element at "<<i<<","<<j<<" is "<<a[i][j]<<endl;
+        }
+    }
+}
+*/
+//functions
+/*
+int add(int a,int b)
+{
+    return (a+b);
+}
+int main(){
+    cout<<"sum is "<<add(2,6);
+}
+*/
+//function overloading
+/*
+int sub(int a,int b){
+return a-b;
+}
+double sub(double a,double b){
+return a-b;
+}
+int main(){
+cout<<sub(10,7)<<endl;
+cout<<sub(5.25,3.66);
+}
+*/
+//pointers
+/*
+int main(){
+int x= 5;
+int *ptr; //ptr is a pointer
+ptr= &x; // Storing address of x in ptr
+cout<<ptr<<endl; // address of pointer
+cout<<*ptr<<endl;
+cout<<x; // value stored by the pointer
+cout<<&x<<endl; //address of x
+}
+*/
+//classes
+/*
+class stu{
+    public:string usn;
+    string name;
+};
+int main(){
+    stu s1;
+    s1.usn="A1";
+    s1.name="Ankit";
+    cout<<s1.name<<"\n"<<s1.usn;
+}
+*/
+//constructor
+/*
+class stu{
+    public:string usn;
+    string name;
+    stu(string n,string u)
+    {
+        name=n;
+        usn=u;
+    }
+};
+int main(){
+    stu s1= stu( "Ankita", "A1");
+   cout<<s1.name<<"\n";
+   stu s2= stu( "nakita", "B2");
+   cout<<s2.name<<"\n";
+    }
+   */
+/*Inheritance
+class up{
+    public: int a=1;
+
+};
+class down:public up{
+    public: int b=2;
+};
+int main(){
+    down d;
+    cout<<"the down is "<<d.b<<endl;
+    cout<<"the up is "<<d.a<<endl;
+}
+*/
+/*Pass by value
+int smthg(int num){
+num += 1;
+cout<<num<<endl;
+num += 1;
+cout<<num<<endl;
+num += 1;
+cout<<num<<endl;
+}
+
+int main(){
+    int num;
+    cin>>num;
+    smthg(num);
+    cout<<num;
+}
+Pass by reference
+void smthg(int a[], int n){
+    a[0]+=50;
+    cout<<"value inside smthg function "<<a[0]<<endl;
+}
+
+int main(){
+    int n=5;
+    int a[n];
+    for  (int i = 0; i < n ; i++) {
+    cin>>a[i];
+    }
+    smthg(a,n);
+    cout<<"value inside int main "<<a[0];
+}
+*/
